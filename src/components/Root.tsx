@@ -1,8 +1,12 @@
+import { Box, HStack } from "@chakra-ui/react";
 import { Outlet } from "react-router-dom";
+import {FaAirbnb} from "react-icons/fa";
 
 export default function Root() {
-  return <h1>
-    I'm Root
+  return <Box>
+    <HStack>
+    <FaAirbnb />
+    </HStack>
     <Outlet />
-  </h1>
+  </Box>
 }
